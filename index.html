@@ -37,6 +37,26 @@
         h1 + p{
             color:green;
         }
+
+        /* Pseudo class , Fake */
+        #hov {
+            background-color: wheat;
+            height: 50px;
+            width: 100px;
+            border: 3px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+         #hov:hover{
+            cursor: pointer;
+            transform: scale(1.06);
+            transition: 0.4s;
+            background-color: #444;
+            color: white;
+         }
+
     </style>
 
 </head>
@@ -74,6 +94,11 @@
     <!-- sibling selector -->
     <p>This is subling 2</p> 
     <!-- sibling to this h1  -->
+
+    <p id="hov">Codingal</p>
+
+
+
 
 
 </body>
