@@ -7,21 +7,36 @@
     <title>CSS Advanced Selector</title>
 
     <style>
-        input[type="email"]{
-            border:2px red solid;
+        input[type="email"] {
+            border: 2px red solid;
         }
 
-        input[type="password"]{
-            border:2px green solid;
+        input[type="password"] {
+            border: 2px green solid;
         }
 
         /* child selector */
-        ul  li {
+        /* ul li {
             color: magenta;
+        } */
+
+        li:first-child{
+            color:red;
+        } 
+
+        li:nth-child(2){
+            background-color: lightgreen;
         }
 
-        
+        li:nth-child(3){
+            color: blue;
+        }
 
+
+        /* sibling selector */
+        h1 + p{
+            color:green;
+        }
     </style>
 
 </head>
@@ -40,16 +55,25 @@
             <input type="password" name="" id="">
         </div>
         <button type="submit">Login</button>
+        <p>Test</p>
     </form>
 
-    <!-- Child Selector -->  
+
+
+    <!-- Child Selector -->
     <!-- ul ==> Parent , li ==> child tag -->
-     <ul>
+    <ul>
         <li>first</li>
         <li>second</li>
         <li>third</li>
-     </ul>
+    </ul>
 
+
+    
+    <h1>This is sibling 1</h1>
+    <!-- sibling selector -->
+    <p>This is subling 2</p> 
+    <!-- sibling to this h1  -->
 
 
 </body>
